@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+ <link rel='stylesheet' href="{% static '/css/service.css' %}">
+ <div class="base">
+    <img alt="img" src='{% static "/images/i15.jpg" %}' class="bimg"></img>
+    <div  class="container">
+        <div class="base-text">
+          <h1 >Service</h1>
+        </div>
+      </div>
+    </div>
+    <h1 class="head">
+        <span>p</span>
+        <span>a</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+ <div class="row row-cols-1 row-cols-md-3 g-4" style='width:99%'>
+        {% for tour in tours %}
+            <div class="col">
+            <div class="card">
+            <img src="{{ tour.image.url }}" class='service_image' style='border-radius:10px'>
+            <div class="card-body">
+              <a href="{% url 'detail' tour.id %}">
+            <h2 class="card-title fw-bold" >{{ tour.title }}</h2>
+              </a>
+            <p class="card-text">{{ tour.description }}</p>
+            <h3 class='card-text'>{{ tour.price }}</h3>
+            <a  class='sbtn' style='font-size:1rem'>Book</a>
+        </div>
+    </div>
+    </div>
+         {% endfor %}
+        </div>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+  <link rel='stylesheet' href="{% static '/css/home.css' %}" >
+  <div class="base">
+    <img
+      alt="img"
+      src='{% static "/images/i17.jpg" %}'
+      class="bimg"
+    ></img>
+    <div  class="container">
+      <div class="base-text">
+        <h1 >Your Journey Your Story</h1>
+        <p>Choose Your Favourite Destination</p>
+        <a href="{% url 'service' %}" class='show'>
+          Plan
+        </a>
+      </div>
+    </div>
+  </div>
+  <h1 class="ph">Popular Destinations</h1>
+  <p class="pp">
+    Tours give you the oppartunity to see a lot,within a time frame.
+  </p>
+  <div class="first-des">
+    <div class="des-text">
+      <h2>Vietnam</h2>
+      <p>
+        "Vietnam is a Southeast Asian country known for its beaches, rivers,
+        Buddhist pagodas and bustling cities. Hanoi, the capital, pays homage to
+        the nation's iconic Communist-era leader, Ho Chi Minh, via a huge marble
+        mausoleum. Ho Chi Minh City (formerly Saigon) has French colonial
+        landmarks, plus Vietnamese War history museums."
+      </p>
+    </div>
+    <div class="ima">
+      <img alt="img" src="{% static "/images/i10.jpg" %} " />
+      <img alt="img" src="{% static "/images/i3.jpg" %} " />
+    </div>
+  </div>
+  <div class="first-des-rev">
+    <div class="des-text">
+      <h2>Munnar ,Town in Kerala</h2>
+      <p>
+        "Munnar is a town in the Western Ghats mountain range in India's Kerala state. A hill station and former resort for the British Raj elite, it's surrounded by rolling hills dotted with tea plantations established in the late 19th century. Eravikulam National Park, a habitat for the endangered mountain goat Nilgiri tahr, is home to the Lakkam Waterfalls, hiking trails and 2,695m-tall Anamudi Peak"
+      </p>
+    </div>
+    <div class="ima">
+      <img alt="img" src="{% static "/images/i7.jpg" %} " />
+      <img alt="img" src="{% static "/images/i8.jpg" %} " />
+    </div>
+  </div>
+</div>
+
+{% endblock %}

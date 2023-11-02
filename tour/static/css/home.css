@@ -1,0 +1,171 @@
+.destination{
+    justify-content: center;
+    margin: 4rem 6rem;
+}
+
+.destination h1{
+    font-size: 3rem;
+}
+
+.first-des{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 4.5rem;
+}
+
+.first-des-rev{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7.5rem;
+    }
+
+.ph{
+    margin-left: 31%;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: -2rem;
+}
+
+.pp{
+    margin-left: 33%;
+    margin-top: 0.5rem;
+}
+.des-text{
+   width: 45%;
+   text-align: start;
+   font-size: 1.2rem;
+   margin-left: 2rem;
+
+}
+
+.des-text h2{
+    padding-bottom: 1rem;
+}
+
+.ima{
+    position: relative;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -99;
+
+}
+
+.ima img{
+    width:46%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 50px 62px -18px gray;
+}
+
+
+.ima img:nth-child(2){
+    position: absolute;
+    top:-20px;
+    right: 1.9rem;
+}
+
+.base{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+
+.bimg{
+    width: 100%;
+    height: 620px;
+    padding: 0rem;
+   object-fit:fill;
+}
+
+.base-text{
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    
+}
+
+.base-text p{
+    margin-left:6rem;
+    font-weight: 700;
+}
+
+.container{
+    justify-content: center;
+}
+
+.base-text .show{
+    border-radius: 4px;
+    background-color: #5ca1e1;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding: 16px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+    box-shadow: 0 10px 20px -8px rgba(219, 198, 198, 0.7);
+  }
+  
+  .base-text .show{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .base-text .show:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 8px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .base-text .show:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .base-text .show:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+.base-text h1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: black;
+}
+
+.base-text p{
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+
+
+
+.base-text .show{
+    text-decoration: none;
+    background-color: #136dac;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 41%;
+}
